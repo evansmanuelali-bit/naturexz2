@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naturexz — Onde a natureza respira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cursor personalizado -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Névoa flutuante -->
+<div class="fog" aria-hidden="true"></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#hero" class="logo">Nature<span>xz</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Início</a></li>
+      <li><a href="#sobre" class="nav-link">Sobre</a></li>
+      <li><a href="#galeria" class="nav-link">Galeria</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="slide active" style="background-image:url('assets/sunset1.jpg')"></div>
+    <div class="slide" style="background-image:url('assets/sunset2.jpg')"></div>
+    <div class="slide" style="background-image:url('assets/sunset3.png')"></div>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-kicker reveal-hero">silêncio • luz • horizonte</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Nature</span><span class="accent">xz</span></span>
+    </h1>
+    <p class="hero-sub reveal-hero">Onde o sol se despede e a floresta sussurra.<br>Um convite para respirar devagar.</p>
+    <a href="#sobre" class="btn-hero reveal-hero"><span>Explorar</span></a>
+  </div>
+
+  <div class="scroll-hint"><span class="mouse"><span class="wheel"></span></span><small>role para descer</small></div>
+</section>
+
+<!-- SOBRE -->
+<section class="section sobre" id="sobre">
+  <div class="container grid-2">
+    <div class="text-block reveal">
+      <h2 class="section-title">O fim do dia,<br><em>recomeço da alma</em></h2>
+      <p>Entre galhos silhuetados e o céu em chamas, a natureza escreve sua poesia sem palavras.
+      O Naturexz nasceu para celebrar esses instantes — o brilho alaranjado do entardecer,
+      o vento nas copas e a calma que só existe longe do barulho.</p>
+      <p>Cada fotografia é um convite: desconecte, caminhe, observe. O mundo natural não cobra nada,
+      apenas pede presença.</p>
+      <div class="stats">
+        <div class="stat"><strong data-count="365">0</strong><span>dias de sol</span></div>
+        <div class="stat"><strong data-count="18">0</strong><span>trilhas mapeadas</span></div>
+        <div class="stat"><strong data-count="4">0</strong><span>biomas explorados</span></div>
+      </div>
+    </div>
+    <div class="image-block reveal parallax-img">
+      <img src="assets/sunset1.jpg" alt="Pôr do sol entre árvores">
+      <div class="frame-deco"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section galeria" id="galeria">
+  <div class="container">
+    <h2 class="section-title center reveal">Galeria <em>do entardecer</em></h2>
+    <p class="center reveal section-sub">Clique para ampliar e deixar a luz tomar a tela.</p>
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal" data-full="assets/sunset1.jpg">
+        <img src="assets/sunset1.jpg" alt="Sol poente atrás das árvores">
+        <figcaption>Crepúsculo I — silhuetas ao vento</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-full="assets/sunset2.jpg">
+        <img src="assets/sunset2.jpg" alt="Céu rosado com árvores em primeiro plano">
+        <figcaption>Crepúsculo II — véu rosado</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-full="assets/sunset3.png">
+        <img src="assets/sunset3.png" alt="Horizonte dourado entre galhos">
+        <figcaption>Crepúsculo III — horizonte dourado</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Fechar">&times;</button>
+  <img src="" alt="" id="lbImg">
+</div>
+
+<!-- CITAÇÃO / PARALLAX -->
+<section class="quote-band" id="quoteBand" style="background-image:url('assets/sunset3.png')">
+  <div class="quote-overlay"></div>
+  <blockquote class="reveal">
+    <p>"Na natureza, nada se apressa —<br>e mesmo assim tudo se realiza."</p>
+    <cite>— Lao Tsé</cite>
+  </blockquote>
+</section>
+
+<!-- CONTATO -->
+<section class="section contato" id="contato">
+  <div class="container center">
+    <h2 class="section-title reveal">Vem viver <em>a natureza</em></h2>
+    <p class="section-sub reveal">Receba novas trilhas, amanheceres e histórias da floresta.</p>
+    <form class="newsletter reveal" id="newsForm">
+      <input type="email" placeholder="seu@email.com" required id="emailInput">
+      <button type="submit"><span>Assinar</span></button>
+    </form>
+    <p class="form-msg" id="formMsg"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-flex">
+    <a href="#hero" class="logo">Nature<span>xz</span></a>
+    <p>Feito com respeito à natureza — © 2026 Naturexz.</p>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="YouTube">YT</a>
+      <a href="#" aria-label="Pinterest">PT</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
